@@ -4,42 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escuela Nº 4087 - Fechas Patrias</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Escuela Nº 4087</h1>
-    <h2>Proyecto colaborativo - Fechas Patrias</h2>
-  </header>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Escuela Nº 4087 - Canónigo Juan Ignacio de Gorriti</h1>
+      <h2>Proyecto colaborativo - Fechas Patrias</h2>
+    </div>
+  </header> 
 
   <nav>
     <ul>
-      <li><a href="#archivos">Archivos</a></li>
-      <li><a href="#enlaces">Enlaces</a></li>
-      <li><a href="#videos">Videos</a></li>
+      <li><a href="#archivos"><i class="fa-solid fa-folder-open"></i> Archivos</a></li>
+      <li><a href="#enlaces"><i class="fa-solid fa-link"></i> Enlaces</a></li>
+      <li><a href="#videos"><i class="fa-solid fa-video"></i> Videos</a></li>
     </ul>
   </nav>
 
   <main>
     <section id="archivos">
-      <h3>📂 Archivos</h3>
-      <p>Puedes descargar los documentos relacionados con el Combate de las Piedras</p>
+      <h3><i class="fa-solid fa-folder-open"></i> Archivos</h3>
+      <p>Puedes descargar los documentos relacionados con el <b>Combate de las Piedras</b>:</p>
       <ul>
-        <li><a href="docs/Libro.pdf" target="_blank">Portal de la Independencia 4° Grado "A"</a></li>
+        <li><i class="fa-solid fa-file-pdf"></i> <a href="docs/Libro.pdf" target="_blank">Portal de la Independencia 4° Grado "A"</a></li>
       </ul>
     </section>
 
     <section id="enlaces">
-      <h3>🔗 Enlaces</h3>
+      <h3><i class="fa-solid fa-link"></i> Enlaces</h3>
       <p>Recursos externos y páginas educativas:</p>
       <ul>
-        <li><a href="https://www.argentina.gob.ar/educacion" target="_blank">Ministerio de Educación</a></li>
-        <li><a href="https://www.cultura.gob.ar/" target="_blank">Ministerio de Cultura</a></li>
+        <li><i class="fa-solid fa-graduation-cap"></i> <a href="https://www.argentina.gob.ar/educacion" target="_blank">Ministerio de Educación</a></li>
+        <li><i class="fa-solid fa-landmark"></i> <a href="https://www.cultura.gob.ar/" target="_blank">Ministerio de Cultura</a></li>
       </ul>
     </section>
 
     <section id="videos">
-      <h3>🎥 Videos</h3>
+      <h3><i class="fa-solid fa-video"></i> Videos</h3>
       <p>Videos de los actos patrios realizados en la escuela:</p>
       <video width="640" controls>
         <source src="videos/acto.mp4" type="video/mp4">
@@ -51,5 +58,21 @@
   <footer>
     <p>&copy; 2025 Escuela Nº 4087 - Proyecto Fechas Patrias</p>
   </footer>
+
+  <!-- Animación de secciones -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((sec, i) => {
+        sec.style.opacity = "0";
+        sec.style.transform = "translateY(30px)";
+        setTimeout(() => {
+          sec.style.transition = "all 0.8s ease";
+          sec.style.opacity = "1";
+          sec.style.transform = "translateY(0)";
+        }, 300 * i);
+      });
+    });
+  </script>
 </body>
 </html>
