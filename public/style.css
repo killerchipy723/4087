@@ -128,7 +128,7 @@ i{
 /* Hero Header con portada */
 .hero {
   position: relative;
-  background: url("img/portada.jpg") no-repeat center center/cover;
+  background: url("img/portada\ unificada.png") no-repeat center center/cover;
   height: 35vh; /* Reducido de 60vh a 35vh */
   display: flex;
   align-items: center;
@@ -156,3 +156,4 @@ i{
   font-weight: 400;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
 }
+
