@@ -1,167 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escuela Nº 4087 - Plataforma de fomento cultural</title>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escuela Nº 4087 - Plataforma de fomento cultural</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="hero-overlay">
-        <h1>Escuela Nº 4087 - Canónigo Juan Ignacio de Gorriti</h1>
-        <h2>PLATAFORMA DE RECURSOS EDUCATIVOS</h2>
-      </div>
-    </header>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <nav>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Escuela Nº 4087 - Canónigo Juan Ignacio de Gorriti</h1>
+      <h2>PLATAFORMA DE RECURSOS EDUCATIVOS</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#archivos"><i class="fa-solid fa-folder-open"></i> Archivos</a>
+      </li>
+      <li>
+        <a href="#enlaces"><i class="fa-solid fa-link"></i> Enlaces</a>
+      </li>
+      <li>
+        <a href="#videos"><i class="fa-solid fa-video"></i> Videos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="archivos">
+      <h3><i class="fa-solid fa-folder-open"></i> Archivos</h3>
+      <p>
+        Puedes descargar los documentos relacionados con el
+        <b>Combate de las Piedras</b>:
+      </p>
       <ul>
         <li>
-          <a href="#archivos"
-            ><i class="fa-solid fa-folder-open"></i> Archivos</a
-          >
-        </li>
-        <li>
-          <a href="#enlaces"><i class="fa-solid fa-link"></i> Enlaces</a>
-        </li>
-        <li>
-          <a href="#videos"><i class="fa-solid fa-video"></i> Videos</a>
+          <i class="fa-solid fa-file-pdf"></i>
+          <a href="docs/Libro.pdf" target="_blank">Portal de la Independencia 4° Grado "A"</a>
         </li>
       </ul>
-    </nav>
 
-    <main>
-      <section id="archivos">
-        <h3><i class="fa-solid fa-folder-open"></i> Archivos</h3>
-        <p>
-          Puedes descargar los documentos relacionados con el
-          <b>Combate de las Piedras</b>:
-        </p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-file-pdf"></i>
-            <a href="docs/Libro.pdf" target="_blank"
-              >Portal de la Independencia 4° Grado "A"</a
-            >
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <i class="fa-solid fa-file-pdf"></i>
+          <a href="docs/Documento Orientador.pdf" target="_blank">Documento Orientador Combate de las Piedras</a>
+        </li>
+      </ul>
+    </section>
 
-        <ul>
-          <li>
-            <i class="fa-solid fa-file-pdf"></i>
-            <a href="docs/Documento Orientador.pdf" target="_blank"
-              >Documento Orientador Combate de las Piedras</a
-            >
-          </li>
-        </ul>
-      </section>
+    <section id="enlaces">
+      <h3><i class="fa-solid fa-link"></i> Enlaces</h3>
+      <p>Recursos externos y páginas educativas:</p>
+      <ul>
+        <li>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <a href="https://www.argentina.gob.ar/educacion" target="_blank">Ministerio de Educación</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-landmark"></i>
+          <a href="https://www.cultura.gob.ar/" target="_blank">Ministerio de Cultura</a>
+        </li>
+      </ul>
+    </section>
 
-      <section id="enlaces">
-        <h3><i class="fa-solid fa-link"></i> Enlaces</h3>
-        <p>Recursos externos y páginas educativas:</p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-graduation-cap"></i>
-            <a href="https://www.argentina.gob.ar/educacion" target="_blank"
-              >Ministerio de Educación</a
-            >
-          </li>
-          <li>
-            <i class="fa-solid fa-landmark"></i>
-            <a href="https://www.cultura.gob.ar/" target="_blank"
-              >Ministerio de Cultura</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <section id="videos">
-        <h3><i class="fa-solid fa-video"></i> Videos</h3>
-        <p>
-          Video Combate de las Piedras: Realizados por alumnos de 5 grado A,B,C
-        </p>
-        <iframe
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/Tm1zL2YswR4"
-          title="Video de YouTube"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        >
-        </iframe>
-      </section>
-      <!--Seccion de galeria de fotos-->
-      <section id="galeria">
-  <h3><i class="fa-solid fa-images"></i> Galería de Fotos</h3>
-  <div class="gallery-container">
-    <div class="gallery-slide fade">
-      <img src="img/portada unificada.png" alt="Foto 1">
-    </div>
-    <div class="gallery-slide fade">
-      <img src="img/foto2.jpg" alt="Foto 2">
-    </div>
-    <div class="gallery-slide fade">
-      <img src="img/foto3.jpg" alt="Foto 3">
-    </div>
-    <div class="gallery-slide fade">
-      <img src="img/foto4.jpg" alt="Foto 4">
-    </div>
-
-    <!-- Controles -->
-    <a class="prev">&#10094;</a>
-    <a class="next">&#10095;</a>
-
-    <!-- Indicadores -->
-    <div class="dots">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-  </div>
-</section>
-      <!---->
-
-    </main>
-
-    <footer>
+    <section id="videos">
+      <h3><i class="fa-solid fa-video"></i> Videos</h3>
       <p>
-        📚 Plataforma diseñada con fines educativos -
-        <strong>Escuela N° 4087 Canónigo Juan Ignacio de Gorriti</strong>
+        Video Combate de las Piedras: Realizados por alumnos de 5 grado A,B,C
       </p>
-      <small
-        >Diseño Web:
-        <a href="mailto:diegoeduardo66@gmail.com"
-          >diegoeduardo66@gmail.com</a
-        ></small
-      >
-    </footer>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/Tm1zL2YswR4" title="Video de YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </section>
+    <!--Seccion de galeria de fotos-->
+    <section id="galeria">
+      <h3><i class="fa-solid fa-images"></i> Galería de Fotos</h3>
+      <div class="gallery-container">
+        {{galeria}}
+      </div>
+    </section>
 
-    <!-- Animación de secciones -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll("section");
-        sections.forEach((sec, i) => {
-          sec.style.opacity = "0";
-          sec.style.transform = "translateY(30px)";
-          setTimeout(() => {
-            sec.style.transition = "all 0.8s ease";
-            sec.style.opacity = "1";
-            sec.style.transform = "translateY(0)";
-          }, 300 * i);
-        });
+
+    <!---->
+
+  </main>
+
+  <footer>
+    <p>
+      📚 Plataforma diseñada con fines educativos -
+      <strong>Escuela N° 4087 Canónigo Juan Ignacio de Gorriti</strong>
+    </p>
+    <small>Diseño Web:
+      <a href="mailto:diegoeduardo66@gmail.com">diegoeduardo66@gmail.com</a></small>
+  </footer>
+
+  <!-- Animación de secciones -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((sec, i) => {
+        sec.style.opacity = "0";
+        sec.style.transform = "translateY(30px)";
+        setTimeout(() => {
+          sec.style.transition = "all 0.8s ease";
+          sec.style.opacity = "1";
+          sec.style.transform = "translateY(0)";
+        }, 300 * i);
       });
-    </script>
-   <script src="js/script.js"></script>
-  </body>
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
